@@ -7,7 +7,7 @@ books = Books()
 
 @app.route('/')
 def index():
-    return render_template('index.html', library=books.library)
+    return render_template('index.html', books=books.library)
 
 # show book
 @app.route('/books/<int:index>')
