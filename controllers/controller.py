@@ -5,6 +5,7 @@ from models.book import Book
 
 books = Books()
 
+# books library
 @app.route('/')
 def index():
     return render_template('index.html', books=books.library)
