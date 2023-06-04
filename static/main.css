@@ -2,6 +2,19 @@
 body {
     background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid black; /* Add the border property */
+    
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logo-container img {
+    max-width: 200px; /* Adjust the size as needed */
 }
 
 /* Headings */
@@ -10,10 +23,13 @@ h1.main-heading {
     text-align: center;
     margin-top: 20px;
     font-weight: bold;
+    border: 5px solid #000; /* Add a border around the main heading */
+    padding: 10px; /* Add some padding to the main heading */
 }
 
 h1.sub-heading {
-    color: rgb(228, 8, 8);
+    color: #ee1010;
+    font-size: larger;
 }
 
 h2 {
@@ -54,6 +70,8 @@ a {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    margin: 5px 10px 5px 10px;
+    font-weight: bold; /* Add this line */
 }
 
 /* Add some margins for each label */
@@ -90,10 +108,11 @@ a {
     border: 1px solid #ddd;
     color: white;
     margin: 0 10px;
+    font-weight: bold; /* Add this line */
 }
 
 .form-inline input[type="submit"]:hover {
-    background-color: #7A93AC;
+    background-color: #ac7a7a;
 }
 
 /* Book Container */
@@ -101,14 +120,17 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: stretch; /* Add this line */
+    height: 300px; /* Adjust the height as needed */
 }
+
 
 /* Book */
 .book {
     display: flex;
     flex-direction: column;
     width: 20vw;
-    background-color: #617073;
+    background-color: #ee1010;
     padding: 10px;
     margin: 20px;
     position: relative; /* Position the book container */
@@ -134,10 +156,12 @@ a {
     border: 1px solid #ddd;
     color: white;
     margin: 0;
+    
 }
 
 .book form input[type="submit"]:hover {
     background-color: #7A93AC;
+    
 }
 
 /* Base */
