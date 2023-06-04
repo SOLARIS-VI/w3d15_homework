@@ -20,7 +20,7 @@
                 <h2>{{ book.title }}</h2>
                 <p>Author: {{ book.author }}</p>
                 <p>Genre: {{ book.genre }}</p>
-                <form action="/books/delete/{{ loop.index }}" method="POST">
+                <form action="/books/{{ loop.index0 }}/delete" method="POST">
                     <input type="submit" value="Remove">
                 </form>
             </div>

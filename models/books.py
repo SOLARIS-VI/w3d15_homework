@@ -5,5 +5,5 @@ class Books:
     def add_book(self, book):
         self.library.append(book)
 
-    def remove_book(self, book):
-        self.library.remove(book)
+    def remove_book(self, index):
+        del self.library[index]

@@ -7,7 +7,7 @@ books = Books()
 
 @app.route('/')
 def index():
-    return render_template('index.html', library=books.library)
+    return render_template('index.html', books=books.library)
 
 @app.route('/books', methods=['POST'])
 def add_book():
@@ -20,9 +20,9 @@ def add_book():
 
     return redirect('/')
 
-@app.route('/books/delete/<int:index>', methods=['POST'])
+@app.route('/books/<int:index>/delete', methods=['POST'])
 def delete_book(index):
-    books.remove_book(index-1)
+    books.remove_book(index)
 
     return redirect('/')
 
